@@ -1,52 +1,60 @@
-body{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: x-large;
-    background-color:white;
-}
-header{
-    color:;
-    text-align: start;
-    font-size: medium;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+@font-face {
+  font-family: "Buttons' Font";
+  src: url("../Fonts/BBHSansBartle-Regular.ttf") format("truetype");
 }
 
-.home {
-  position: absolute; /* абсолютное позиционирование */
-  top: 50px;        /* отступ сверху */
-  left: 1200px;        /* отступ слева */
-  color: rgb(180, 2, 79);       /* просто для примера */
-}
-
-.contacts {
-  position: absolute; /* абсолютное позиционирование */
-  top: 50px;        /* отступ сверху */
-  left: 1395px;        /* отступ слева */
-  color:rgb(180, 2, 79);       /* просто для примера */
-}
-
-.products {
-  position: absolute; /* абсолютное позиционирование */
-  top: 50px;        /* отступ сверху */
-  left: 1650px;        /* отступ слева */
-  color:rgb(180, 2, 79);       /* просто для примера */
-}
-
-a {
-  color: black;           /* Цвет текста ссылки */
-  text-decoration: none;  /* Убираем подчеркивание */
-}
-
-a:hover {
-  color: rgb(180, 2, 79);        /* Цвет при наведении (по желанию) */
-  text-decoration: underline; /* Можно показать подчеркивание при наведении */
+body {
+  
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('background.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .corner-logo {
-  position: fixed;  /* фиксируется при прокрутке */
-  top: 0px;
-  left: 0px;
-  width: 300px;
-  height: auto;
-  z-index: 1000;   /* чтобы была поверх всего */
+  width: 15%;
+}
+
+nav {
+  width: 70%;
+}
+
+header {
+  display: flex;
+  background-attachment: fixed;
+  margin: 0;
+  background-color: rgb(34, 70, 79);
+}
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+li a {
+  width: 10rem;
+  height: 6rem;
+  text-align: center;
+  line-height: 6rem;
+  color:blue;
+  font-size: 2rem;
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+li:hover {
+  background-color: rgb(0, 94, 20);
+}
+
+li {
+  background-color: aqua;
+  width: 10rem;
+  height: 6rem;
+  text-align: center;
+  line-height: 6rem;
+  color:rgb(255, 0, 0);
+  font-size: 2rem;
 }
