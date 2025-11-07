@@ -4,7 +4,7 @@
 }
 
 body {
-  
+  display: flex;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -13,6 +13,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: "Buttons' Font";
 }
 
 .corner-logo {
@@ -25,22 +26,26 @@ nav {
 
 header {
   display: flex;
-  background-attachment: fixed;
+  top: 0;   
+  position: sticky;
   margin: 0;
   background-color: rgb(34, 70, 79);
+  z-index: 10;
 }
+
 ul {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
+  gap:1rem;
 }
 li a {
   width: 10rem;
   height: 6rem;
   text-align: center;
   line-height: 6rem;
-  color:blue;
-  font-size: 2rem;
+  color:antiquewhite;
+  font-size: 1.5rem;
   text-decoration: none;
   text-decoration-line: none;
 }
@@ -50,11 +55,57 @@ li:hover {
 }
 
 li {
-  background-color: aqua;
-  width: 10rem;
+  background-color: rgb(26, 52, 59);
+  width: 24rem;
   height: 6rem;
   text-align: center;
   line-height: 6rem;
-  color:rgb(255, 0, 0);
-  font-size: 2rem;
+  color:antiquewhite;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+}
+
+p{
+  color:antiquewhite;
+  text-align: center;
+  margin: 0 auto;
+  width:50rem;
+  height: 6rem;
+  padding-top: 1rem;
+}
+
+.a {
+  height: 10rem;
+}
+
+h3 {
+  color:antiquewhite;
+  text-align: center;
+  margin: 0 auto;
+  width:70rem;
+  height: 15rem;
+  line-height: 15rem;
+  font-size: 3rem;
+}
+
+.MainPic {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;     
+  align-items: center;
+  height: 40rem;
+}
+
+.container1 {
+  display:flex;
+  justify-content: space-evenly;
+  gap: 5rem;
+}
+
+footer{
+  background-color: rgb(34, 70, 79);
+  padding-bottom: 4rem;
+  height: 7rem;
+  display: flex;
+  margin: 0 auto;
 }
